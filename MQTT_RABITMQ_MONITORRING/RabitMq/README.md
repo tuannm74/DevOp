@@ -5,6 +5,8 @@
        docker push tuannm74/rabit:1.0
 
        e2c pull: docker pull tuannm74/rabit:1.0
+       
+       docker run -d -p 5127:5127 --name rabitmqSub tuannm74/rabit:1.0
 2. Tạo rabitMq bằng docker-compose
 
        docker-compose up -d

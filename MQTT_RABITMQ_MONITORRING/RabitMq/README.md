@@ -7,13 +7,13 @@
        e2c pull: docker pull tuannm74/rabit:1.0
 2. Tạo rabitMq bằng docker-compose
 
-      docker-compose up -d
+       docker-compose up -d
       
       
   MQTT BOX:
       Gửi mes topic: devops/data 
-      Pay load: {baterry:88}
+      Pay load: {baterry:8}
       
-  Xem log server :
-    file images
+  Xem log container server :
+    => hiển thị pin yếu
       

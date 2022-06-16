@@ -1,0 +1,29 @@
+version: '3'
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - 9090:9090
+  node-exporter:
+    image: prom/node-exporter
+    ports:
+      - 9100:9100
+  grafana:
+    image: grafana/grafana
+    user: "1000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=password
+    depends_on:
+      - prometheus
+    ports:
+      - 3000:3000
+  pushgateway:
+    image: prom/pushgateway
+    ports:
+      - 9091:9091
+    depends_on:
+      - prometheus

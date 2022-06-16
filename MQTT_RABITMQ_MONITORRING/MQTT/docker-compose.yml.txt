@@ -1,0 +1,16 @@
+version: '3' 
+services:   
+  mqtt_tuan:  
+    image: emqx/emqx:latest   
+    ports:    
+      - 18083:18083  
+      - 1883:1883
+    environment:       
+      - EMQX_AUTH__USER__PASSWORD_HASH=plain      
+      - EMQX_AUTH__USER__1__USERNAME=tuan   
+      - EMQX_AUTH__USER__1__PASSWORD=Tuan@2019
+      - EMQX_LOADED_PLUGINS=emqx_prometheus
+      - EMQX_PROMETHEUS__PUSH__GATEWAY__SERVER=http://18.144.168.248:9091
+      - EMQX_PROMETHEUS__INTERVAL=15000
+    volumes:
+      - ./emqx_statsd.conf:/etc/emqx_statsd.conf

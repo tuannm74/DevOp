@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "xM3Nzvx1y7alA71Kmg91G4QUN9ntCezclzeG6wQ2Trk=",
+  "Source": "MqttPub",
+  "BasePath": "_content/MqttPub",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,2 @@
+statsd.push.gateway.server = http://18.144.168.248:9091
+statsd.interval = 15000

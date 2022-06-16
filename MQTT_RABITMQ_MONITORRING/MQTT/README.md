@@ -5,6 +5,8 @@
         docker push tuannm74/mqtt:1.0
 
         e2c pull: docker pull tuannm74/mqtt:1.0
+        
+        docker run -d -p 5024:5024 --name mqttPub tuannm74/mqtt:1.0
 
 3. Tạo mqtt bằng docker-compose
 

@@ -12,9 +12,10 @@
        docker-compose up -d
       
 3. MQTT BOX: 18.144.168.248:1883
+
        Gửi mes topic: devops/data 
        Pay load: {baterry:8}
       
-  Xem log container server :
+4. Xem log container server :
         => hiển thị pin yếu
       

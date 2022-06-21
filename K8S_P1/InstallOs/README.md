@@ -1,4 +1,4 @@
-Cài Máy ảo băng phần mềm Vagran, vitualbox
-Gõ lệnh:
+Cài Máy ảo băng phần mềm Vagrant, vitualbox
+
 Vagrant up
 (https://xuanthulab.net/kubernetes/)

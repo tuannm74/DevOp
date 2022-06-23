@@ -1,4 +1,6 @@
 Cài Máy ảo băng phần mềm Vagrant, vitualbox
 
 Vagrant up
-(https://xuanthulab.net/kubernetes/)
+
+
+https://devopscube.com/kubernetes-cluster-vagrant/

@@ -1,5 +1,5 @@
 Cài Máy ảo băng phần mềm Vagrant, vitualbox
-
+Gõ lệnh:
 Vagrant up
 
 

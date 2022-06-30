@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: appsettings
+  namespace: apptuannm74
+data:
+  appsettings.json: |-
+    {
+     "Logging": {
+       "LogLevel": {
+         "Default": "Information",
+         "Microsoft.AspNetCore": "Warning"
+       }
+     },
+     "RabbitMq": {
+       "Exchange": "FireSafeServerExchange",
+       "Queue": "FireSafeServerQueue",
+       "RouteKey": "FireSafeServer.Queue.*",
+       "Uri": "amqp://guest:guest@34.228.142.64:31672"
+     },
+     "Mqtt": {
+       "ServerAddress": "34.228.142.64",
+       "ServerPort": "31883",
+       "UserName": "admin",
+       "PassWord": "public",
+       "SubcribeTopic": "devops/#",
+       "TopicHeader": "devops"
+     },
+     "AllowedHosts": "*"
+    }

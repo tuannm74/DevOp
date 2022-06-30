@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mqttpub
+  namespace: apptuannm74
+  labels:
+    app: kubernetes-tutorial
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kubernetes-tutorial
+  template:
+    metadata:
+      labels:
+        app: kubernetes-tutorial
+    spec:
+      containers:
+      - name: kubernetes-tutorial
+        image: tuannm74/mqtt:1.1
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - name: appsettings-volume
+          mountPath: /app/Settings
+      volumes:
+      - name: appsettings-volume
+        configMap:
+          name: appsettings

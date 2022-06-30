@@ -24,7 +24,7 @@ metadata:
   labels:
     app: emqx
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: emqx

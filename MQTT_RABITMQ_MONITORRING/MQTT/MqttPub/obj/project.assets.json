@@ -471,11 +471,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DEVop\\DevOp\\MQTT_RABITMQ_MONITORRING\\MQTT\\MqttPub\\MqttPub.csproj",
+      "projectUniqueName": "C:\\Users\\NMT\\Desktop\\Op\\DevOp\\MQTT_RABITMQ_MONITORRING\\MQTT\\MqttPub\\MqttPub.csproj",
       "projectName": "MqttPub",
-      "projectPath": "E:\\DEVop\\DevOp\\MQTT_RABITMQ_MONITORRING\\MQTT\\MqttPub\\MqttPub.csproj",
+      "projectPath": "C:\\Users\\NMT\\Desktop\\Op\\DevOp\\MQTT_RABITMQ_MONITORRING\\MQTT\\MqttPub\\MqttPub.csproj",
       "packagesPath": "C:\\Users\\NMT\\.nuget\\packages\\",
-      "outputPath": "E:\\DEVop\\DevOp\\MQTT_RABITMQ_MONITORRING\\MQTT\\MqttPub\\obj\\",
+      "outputPath": "C:\\Users\\NMT\\Desktop\\Op\\DevOp\\MQTT_RABITMQ_MONITORRING\\MQTT\\MqttPub\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

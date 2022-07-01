@@ -1,0 +1,12 @@
+version: '3'                                                                                                                                                                                >
+services:                                                                                                                                                                                   >
+  mqtt_tuan:                                                                                                                                                                                >
+    image: emqx/emqx:latest                                                                                                                                                                 >
+    ports:                                                                                                                                                                                  >
+      - 18083:18083                                                                                                                                                                         >
+      - 1883:1883
+
+    environment:                                                                                                                                                                            >
+      - EMQX_AUTH__USER__PASSWORD_HASH=plain                                                                                                                                                >
+      - EMQX_AUTH__USER__1__USERNAME=tuan                                                                                                                                                   >
+      - EMQX_AUTH__USER__1__PASSWORD=Tuan@2019

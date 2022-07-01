@@ -3,5 +3,5 @@ services:
 	redis_tuan:                                                                                                                                                                                                                                    
 		image: redis:6.2-alpine                                                                                                                                                                                                                     
 	ports:                                                                                                                                                                                                                                         
-		- 7484:6379                                                                                                                                                                                                                                
+		- 6379:6379                                                                                                                                                                                                                                
 	command: redis-server --save 60 1 --requirepass Tuan@2019 --loglevel warning    

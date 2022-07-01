@@ -1,0 +1,23 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rambitsub
+  namespace: apptuannm74
+  labels:
+    app: kubernetes-tutorial
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kubernetes-tutorial
+  template:
+    metadata:
+      labels:
+        app: kubernetes-tutorial
+    spec:
+      containers:
+      - name: kubernetes-tutorial
+        image: tuannm74/rabit:1.1
+        ports:
+        - containerPort: 8081
